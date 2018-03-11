@@ -23,8 +23,6 @@ private:
     BtConnectionClosed();
     static QWeakPointer<BtConnectionState> _instance;
 
-
-    
     
 };
 

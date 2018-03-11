@@ -6,8 +6,8 @@ BtConnectionState::BtConnectionState():
        qDebug()<<"state construct";
 }
 
-void BtConnectionState::changeBtState(QSharedPointer<BtConnection> c, QSharedPointer<BtConnectionState> s){
+void BtConnectionState::changeBtConnectionState(QSharedPointer<BtConnection> c, QSharedPointer<BtConnectionState> s){
 
-      c->changeBtState(s);
+      c->changeBtConnectionState(s);
 
 }

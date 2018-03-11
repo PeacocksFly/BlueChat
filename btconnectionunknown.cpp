@@ -13,7 +13,6 @@ BtConnectionUnknown::BtConnectionUnknown()
 BtConnectionUnknown::~BtConnectionUnknown(){
 
             qDebug() << "unknown deleted";
-
 }
 
 
@@ -34,14 +33,14 @@ void BtConnectionUnknown::searchBtConnectionState(QSharedPointer<BtConnection> b
 
     if(isValid()){
          if(hostMode() == QBluetoothLocalDevice::HostPoweredOff){
-             changeBtState(btConnection, BtConnectionClosed::instance());
+             changeBtConnectionState(btConnection, BtConnectionClosed::instance());
          }
 
          else
-             changeBtState(btConnection, BtConnectionOpened::instance());
+             changeBtConnectionState(btConnection, BtConnectionOpened::instance());
     }
     else
-         changeBtState(btConnection, BtConnectionInvalid::instance());
+         changeBtConnectionState(btConnection, BtConnectionInvalid::instance());
 
 }
 

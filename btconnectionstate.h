@@ -17,14 +17,11 @@ public:
      virtual void close(QSharedPointer<BtConnection>){}
      virtual void open(QSharedPointer<BtConnection>){}
      virtual void searchBtConnectionState(QSharedPointer<BtConnection>){}
-     void changeBtState(QSharedPointer<BtConnection>, QSharedPointer<BtConnectionState>);
+     void changeBtConnectionState(QSharedPointer<BtConnection>, QSharedPointer<BtConnectionState>);
     
 protected:
      BtConnectionState();
-    
 
-
-    
 };
 
 

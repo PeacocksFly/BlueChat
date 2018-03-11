@@ -7,6 +7,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QDebug>
+#include "btdiscovery.h"
 
 
 class BlueChat : public QGuiApplication{
@@ -17,6 +18,7 @@ public:
 private:
     QSharedPointer<BtConnection> _btConnection;
     QSharedPointer<QQmlApplicationEngine> _qmlEngine;
+    QSharedPointer<BtDiscovery> _btDiscovery;
 
 };
 

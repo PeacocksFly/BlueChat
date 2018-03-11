@@ -29,5 +29,5 @@ void BtConnectionOpened::close(QSharedPointer<BtConnection> btConnection){
 
       while(hostMode() != QBluetoothLocalDevice::HostPoweredOff);
 
-      changeBtState(btConnection, BtConnectionClosed::instance());
+      changeBtConnectionState(btConnection, BtConnectionClosed::instance());
 }

@@ -18,7 +18,7 @@ public:
     virtual ~BtConnection(){
         qDebug()<< "bconn deleted";
     }
-    void changeBtState(QSharedPointer<BtConnectionState>);
+    void changeBtConnectionState(QSharedPointer<BtConnectionState>);
     void firstConnection();
 
 private:
@@ -28,7 +28,6 @@ private:
 
 public slots:
     void btTurnOnOff(const QString&);
-
 
 signals:
     void btOpened();
